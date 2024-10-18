@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Silent Hill</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/redsquare.png" type="image/x-icon"/>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 
             * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+                
             }
             body{
                 background: linear-gradient(to right, #000000, #101920)
@@ -23,7 +27,7 @@
                 padding: 10px;
             }
             .header{
-                margin: 20px 0 20px 0;
+                margin: 20px 0 40px 0;
                 display: flex;
                 justify-content: center;
                 color: #536279;
@@ -34,15 +38,14 @@
             }
 
             .divjames{
-                display: flex;
-                justify-content: center;
-                padding: 10px 0 10px 0;
-                background-color: #101920;
-            }
-
-            .james{
-                max-width: 100%;
-                box-shadow: 3px 3px 15px #405a70;
+                background-image: url(img/james.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 60vh;
+                height: 30vw;
+               
+                
             }
 
             .colinassilenciosas{
@@ -52,17 +55,89 @@
                 font-size: 20px;
                 text-align: center;
                 display: flex;
-                flex-direction: column;
-                margin: 17px 20px;
+                justify-content: center;
+                margin: 50px 70px;
             }
 
+            @keyframes pulseShadow {
+            0% {
+                box-shadow: 4px 4px 15px #324653;
+            }
+            25% {
+                box-shadow: 4px 4px 17px #324653;
+            }
+            50% {
+                box-shadow: 4px 4px 20px #324653;
+            }
+            75% {
+                box-shadow: 4px 4px 17px #324653;
+            }
+            100% {
+                box-shadow: 4px 4px 15px #324653;
+            }
+            }
+            
             .mary{
-                width: 200px;
+                width: 150px;
                 max-width: 100%;
-                border-radius: 5px;
-                margin: 10px 0;
+                border-radius: 9px;
+                padding: 10px;
+                animation: pulseShadow 1s infinite;
+            }
+            
+            .marysletter{
+                font-family: "Courgette", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 17px;
+                color: #425d72;
+                font-weight: bold;
             }
 
+            .welcomesilenthill{
+                font-family: "Questrial", sans-serif;
+                text-shadow: 3px 3px 10px #314a5d;
+                color: #ffffff;
+                font-size: 20px;
+                text-align: center;
+                margin: 50px 70px;
+            }
+
+            .divimagemsh{
+                display: flex;
+                justify-content: center;
+                margin: 40px 0 20px 0;
+                padding: 10px 10px;
+                background-color: #101920;
+            }
+
+            .shimg{
+                max-width: 100%;
+                height: 500px;
+                width: auto;
+                border-radius: 10px;
+                box-shadow: 3px 3px 15px #20313d;
+                object-fit: cover;
+            }
+
+            .ok{
+                font-family: "Courgette", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 17px;
+                color: #425d72;
+                font-weight: bold;
+            }
+
+            .rodape{
+                background-color: black;
+                color: #ffffff;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Questrial", sans-serif;
+            }
             
         </style>
     </head>
@@ -76,22 +151,45 @@
         </header>
 
         <section>
-            <div class="divjames">
-                <img src="img/james.png" alt="Guilt" class="james">
-            </div>
+            <div class="divjames"></div>
         </section>
 
         <section>
             <div class="colinassilenciosas">
                 <div>
                     <img src="img/marysunderland.png" class="mary">
-                </div>
-                <div>
-                    <h1 class="h1carta">A carta de sua falecida esposa</h1><br>
-                    <p>James Sunderland recebe uma carta inesperada de sua esposa, Mary, falecida há três anos. Na mensagem, ela diz que o espera em um lugar especial para ambos: Silent Hill. Movido pela saudade e pela esperança, James parte para a cidade envolta em névoa em busca de respostas.</p>
+                    <div class="conteudo">
+                        <h1 class="h1carta">A carta de sua falecida esposa</h1><br>
+                        <p>James Sunderland recebe uma carta inesperada de sua esposa, Mary, falecida há três anos.<br> Na mensagem, ela diz que o espera em um lugar especial para ambos, Silent Hill. Movido pela saudade e pela esperança, James parte para a cidade envolta em névoa em busca de respostas.</p>
+                        <br>
+                        <p class="marysletter">"In my restless dreams, I see that town…
+                            Silent Hill.<br>
+                            You promised me you'd take me there again someday. But you never did.
+                            Well, I'm alone there now, In our special place… Waiting for you...
+                            Waiting for you to come to see me."
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section>
+            <div>
+                <div class="divimagemsh">
+                    <img src="img/silenthill.png" class="shimg">
+                </div>
+                <div class="welcomesilenthill">
+                    <h1>Bem-vindo a Silent Hill</h1><br>
+                    <p>Uma cidade envolta em névoa, onde memórias distorcidas e segredos esquecidos permanecem presos no tempo. As ruas desertas ecoam sussurros do passado, e cada esquina revela um fragmento de dor, esperança e desespero. Em Silent Hill, o horror não está apenas nas criaturas que habitam a cidade, mas também nas profundezas da mente de quem se atreve a entrar.
+                        <br> <br>
+                        <span class="ok">Nem tudo o que foi enterrado aqui encontrou descanso.</span></p><br><br>
+                </div>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            <p>Silent Hill © Todos os direitos reservados.</p>
+        </footer>
         
     </body>
 </html>
