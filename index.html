@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Silent Hill</title>
         <link rel="stylesheet" href="css/style.css">
         <style>
@@ -11,39 +12,55 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                line-height: 1.5;
             }
             body{
                 background: linear-gradient(to right, #000000, #101920)
             }
             .logo{
-                max-width: 700px;
+                max-width: 100%;
+                width: 650px;
                 max-height: auto;
-                padding-top: 10px;
+                padding: 10px;
             }
             .header{
-                margin-top: 40px;
+                margin: 20px 0 20px 0;
                 display: flex;
                 justify-content: center;
-                color: #ffffff;
+                color: #536279;
                 text-align: center;
-                font-size: 13px;
+                font-size: 10px;
                 font-family: "Questrial", sans-serif;
-                text-shadow: 3px 3px 10px #314a5d;
-            }
-            
-            h1{
-                margin-top: 7px;
+                text-shadow: 3px 3px 10px #50738f;
             }
 
-            .imgbackground{
-                background-image: url(img/james.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                margin-top: 30px;
-                height: 600px;
-                background-size: cover
-                
+            .divjames{
+                display: flex;
+                justify-content: center;
+                padding: 10px 0 10px 0;
+                background-color: #101920;
+            }
+
+            .james{
+                max-width: 100%;
+                box-shadow: 3px 3px 15px #405a70;
+            }
+
+            .colinassilenciosas{
+                font-family: "Questrial", sans-serif;
+                text-shadow: 3px 3px 10px #314a5d;
+                color: #ffffff;
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                margin: 17px 20px;
+            }
+
+            .mary{
+                width: 200px;
+                max-width: 100%;
+                border-radius: 5px;
+                margin: 10px 0;
             }
 
             
@@ -58,12 +75,22 @@
             </nav>
         </header>
 
-        <section class="information">
-            <div class="imgbackground">
-                <p>test</p>
-                
+        <section>
+            <div class="divjames">
+                <img src="img/james.png" alt="Guilt" class="james">
             </div>
+        </section>
 
+        <section>
+            <div class="colinassilenciosas">
+                <div>
+                    <img src="img/marysunderland.png" class="mary">
+                </div>
+                <div>
+                    <h1 class="h1carta">A carta de sua falecida esposa</h1><br>
+                    <p>James Sunderland recebe uma carta inesperada de sua esposa, Mary, falecida há três anos. Na mensagem, ela diz que o espera em um lugar especial para ambos: Silent Hill. Movido pela saudade e pela esperança, James parte para a cidade envolta em névoa em busca de respostas.</p>
+                </div>
+            </div>
         </section>
         
     </body>
